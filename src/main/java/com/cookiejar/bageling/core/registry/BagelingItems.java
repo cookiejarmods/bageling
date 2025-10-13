@@ -26,9 +26,9 @@ public class BagelingItems {
 
 	public static final DeferredItem<Item> APPLE_JAM_BAGEL = ITEMS.register("apple_jam_bagel", () -> new Item(new Item.Properties().food(ModList.get().isLoaded("farmersdelight") ? BagelingFoodProperties.APPLE_JAM_BAGEL : BagelingFoodProperties.APPLE_JAM_BAGEL_NO_FD)));
 
-	public static final DeferredItem<Item> SWEET_BERRY_JAM_BAGEL = ITEMS.register("sweet_berry_jam_bagel", () -> new Item(new Item.Properties().food(ModList.get().isLoaded("farmersdelight") ? BagelingFoodProperties.SWEET_BERRY_JAM_BAGEL : BagelingFoodProperties.SWEET_BERRY_JAM_BAGEL_NO_FD)));;
+	public static final DeferredItem<Item> SWEET_BERRY_JAM_BAGEL = ITEMS.register("sweet_berry_jam_bagel", () -> new Item(new Item.Properties().food(ModList.get().isLoaded("farmersdelight") ? BagelingFoodProperties.SWEET_BERRY_JAM_BAGEL : BagelingFoodProperties.SWEET_BERRY_JAM_BAGEL_NO_FD)));
 
-	public static final DeferredItem<Item> GLOW_BERRY_JAM_BAGEL = ITEMS.register("glow_berry_jam_bagel", () -> new Item(new Item.Properties().food(ModList.get().isLoaded("farmersdelight") ? BagelingFoodProperties.GLOW_BERRY_JAM_BAGEL : BagelingFoodProperties.GLOW_BERRY_JAM_BAGEL_NO_FD)));;
+	public static final DeferredItem<Item> GLOW_BERRY_JAM_BAGEL = ITEMS.register("glow_berry_jam_bagel", () -> new Item(new Item.Properties().food(ModList.get().isLoaded("farmersdelight") ? BagelingFoodProperties.GLOW_BERRY_JAM_BAGEL : BagelingFoodProperties.GLOW_BERRY_JAM_BAGEL_NO_FD)));
 
 	public static final DeferredItem<Item> SALMON_BAGEL = ITEMS.register("salmon_bagel", () -> new Item(new Item.Properties().food(BagelingFoodProperties.SALMON_BAGEL)));
 

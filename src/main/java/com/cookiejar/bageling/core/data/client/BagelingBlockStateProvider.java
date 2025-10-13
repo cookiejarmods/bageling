@@ -1,7 +1,6 @@
 package com.cookiejar.bageling.core.data.client;
 
 import com.cookiejar.bageling.core.Bageling;
-import com.cookiejar.bageling.core.registry.BagelingBlocks;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
