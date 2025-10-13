@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bageling:bagel"
+    },
+    {
+      "item": "bageling:bagel"
+    },
+    {
+      "item": "bageling:bagel"
+    },
+    {
+      "item": "bageling:bagel"
+    },
+    {
+      "item": "bageling:bagel"
+    },
+    {
+      "item": "bageling:bagel"
+    },
+    {
+      "item": "bageling:bagel"
+    },
+    {
+      "item": "bageling:bagel"
+    },
+    {
+      "item": "bageling:bagel"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "bageling:bagel_stack"
+  }
+}

@@ -1,6 +1,9 @@
 package com.cookiejar.bageling.core;
 
+import com.cookiejar.bageling.core.data.client.BagelingBlockStateProvider;
 import com.cookiejar.bageling.core.data.client.BagelingItemModelProvider;
+import com.cookiejar.bageling.core.data.server.BagelingRecipeProvider;
+import com.cookiejar.bageling.core.registry.BagelingBlocks;
 import com.cookiejar.bageling.core.registry.BagelingEntityTypes;
 import com.cookiejar.bageling.core.registry.BagelingItems;
 import com.cookiejar.bageling.integration.CreateIntegration;
@@ -24,6 +27,7 @@ public class Bageling {
 
 	public Bageling(IEventBus bus, ModContainer container) {
 		BagelingItems.ITEMS.register(bus);
+		BagelingBlocks.BLOCKS.register(bus);
 		BagelingEntityTypes.ENTITIES.register(bus);
 		if (ModList.get().isLoaded("farmersdelight")) {
 			FDIntegration.register();
@@ -42,7 +46,10 @@ public class Bageling {
 
 		boolean server = event.includeServer();
 		boolean client = event.includeClient();
+		generator.addProvider(client, new BagelingBlockStateProvider(output, helper));
 		generator.addProvider(client, new BagelingItemModelProvider(output, helper));
+
+		generator.addProvider(server, new BagelingRecipeProvider(output, provider));
 	}
 
 	public static ResourceLocation location(String path) {

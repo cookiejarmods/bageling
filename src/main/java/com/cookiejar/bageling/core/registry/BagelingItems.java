@@ -5,13 +5,16 @@ import com.cookiejar.bageling.core.Bageling;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.ItemLike;
+import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.ModList;
-import net.neoforged.fml.ModLoader;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
+@EventBusSubscriber(modid = Bageling.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class BagelingItems {
 	public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Bageling.MOD_ID);
 
@@ -51,5 +54,21 @@ public class BagelingItems {
 		public static final FoodProperties SWEET_BERRY_JAM_BAGEL_NO_FD = new FoodProperties.Builder().nutrition(7).saturationModifier(0.4f).fast().build();
 
 		public static final FoodProperties GLOW_BERRY_JAM_BAGEL_NO_FD = new FoodProperties.Builder().nutrition(7).saturationModifier(0.4f).fast().build();
+	}
+
+	@SubscribeEvent
+	public static void buildCreativeTabs(BuildCreativeModeTabContentsEvent event) {
+		if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+			addAfter(event, Items.BREAD, BAGEL);
+			addAfter(event, BAGEL, CREAM_CHEESE_BAGEL);
+			addAfter(event, BAGEL, APPLE_JAM_BAGEL);
+			addAfter(event, BAGEL, SWEET_BERRY_JAM_BAGEL);
+			addAfter(event, BAGEL, GLOW_BERRY_JAM_BAGEL);
+			addAfter(event, BAGEL, SALMON_BAGEL);
+			event.accept(BagelingBlocks.BAGEL_STACK.asItem());
+		}
+	}
+	public static void addAfter(BuildCreativeModeTabContentsEvent event, ItemLike existing, ItemLike newItem) {
+		event.insertAfter(new ItemStack(existing), new ItemStack(newItem), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
 	}
 }

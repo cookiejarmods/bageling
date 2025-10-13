@@ -1,0 +1,15 @@
+// 1.21.1	2025-10-14T01:04:20.760954129	Recipes
+5e3e48285f2cdc1a61f9e26dd4636546168ffb7d data/bageling/advancement/recipes/food/apple_jam_bagel.json
+81d95ae162ec67c7b25c9e344a99129a3111ee8c data/bageling/advancement/recipes/food/bagel.json
+b228352df431c756165cb74e3991a1131d3c43b5 data/bageling/advancement/recipes/food/bagel_stack.json
+968b1762889214334fe0f03f2c9f64255d0b47b2 data/bageling/advancement/recipes/food/cream_cheese_bagel.json
+9fd93e5bcc435f8ce0d66c10723673a80056f32d data/bageling/advancement/recipes/food/glow_berry_jam_bagel.json
+d902d941278adc5506e3eba52c5079aa36b46c60 data/bageling/advancement/recipes/food/sweet_berry_jam_bagel.json
+918ef0aa2e6bb9d982b89424f7c1580c2dbffbf0 data/bageling/recipe/apple_jam_bagel.json
+9c0372a86c3661da7f45ca184843afbd06845b18 data/bageling/recipe/bagel.json
+36a154b176fb868e502278960dd8c9e2641dc63a data/bageling/recipe/bagel_stack.json
+dfe91a2c3b8c51b867559a3d8646ba01dd302c6c data/bageling/recipe/cream_cheese_bagel.json
+ca9d4027ce4bee0f28e3edf2fd725ea26069a25f data/bageling/recipe/glow_berry_jam_bagel.json
+73f79960aa72cc217860cadf4f249136b3c11100 data/bageling/recipe/sweet_berry_jam_bagel.json
+71d030ce58838e4d27d887d84233db6795a0dae1 data/minecraft/advancement/recipes/food/bagel_from_block.json
+8afdba4621698888cc3df294841032cd93e37b25 data/minecraft/recipe/bagel_from_block.json
