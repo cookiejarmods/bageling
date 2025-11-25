@@ -1,9 +1,12 @@
 package com.cookiejar.bageling.core.data.server;
 
+import com.cookiejar.bageling.core.other.tags.BagelingItemTags;
 import com.cookiejar.bageling.core.registry.BagelingBlocks;
+import com.cookiejar.bageling.core.registry.BagelingItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.Tags;
 
 import java.util.concurrent.CompletableFuture;
@@ -28,7 +31,7 @@ public class BagelingRecipeProvider extends RecipeProvider {
 
 		ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, CREAM_CHEESE_BAGEL, 3)
 				.requires(BAGEL, 3)
-				.requires(Tags.Items.BUCKETS_MILK)
+				.requires(BagelingItemTags.MILK)
 				.unlockedBy("has_bagel", has(BAGEL))
 				.save(recipeOutput);
 
@@ -59,5 +62,30 @@ public class BagelingRecipeProvider extends RecipeProvider {
 				.requires(BagelingBlocks.BAGEL_STACK.asItem())
 				.unlockedBy("has_bagel", has(BAGEL))
 				.save(recipeOutput, "bagel_from_block");
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, BAGEL_DOUGH)
+				.requires(BagelingItemTags.DOUGH)
+				.unlockedBy("has_dough", has(BagelingItemTags.DOUGH))
+				.save(recipeOutput);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, BACON_EGG_CHEESE_BAGEL)
+				.requires(BAGEL)
+				.requires(BagelingItemTags.COOKED_PORK)
+				.requires(BagelingItemTags.COOKED_EGG)
+				.requires(BagelingItemTags.MILK)
+				.unlockedBy("has_bagel", has(BAGEL))
+				.save(recipeOutput);
+
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, SALMON_BAGEL)
+				.requires(BAGEL)
+				.requires(BagelingItemTags.COOKED_SALMON)
+				.requires(BagelingItemTags.MILK)
+				.requires(BagelingItemTags.TOMATO)
+				.unlockedBy("has_bagel", has(BAGEL))
+				.save(recipeOutput);
+
+		SimpleCookingRecipeBuilder.smelting(Ingredient.of(BAGEL_DOUGH), RecipeCategory.FOOD, BAGEL.get(), 0.35F, 200).unlockedBy("has_dough", has(BagelingItemTags.DOUGH)).save(recipeOutput, "bagel_from_smelting");
+		SimpleCookingRecipeBuilder.smoking(Ingredient.of(BAGEL_DOUGH), RecipeCategory.FOOD, BAGEL.get(), 0.35F, 100).unlockedBy("has_dough", has(BagelingItemTags.DOUGH)).save(recipeOutput, "bagel_from_smoking");
+		SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(BAGEL_DOUGH), RecipeCategory.FOOD, BAGEL.get(), 0.35F, 600).unlockedBy("has_dough", has(BagelingItemTags.DOUGH)).save(recipeOutput, "bagel_from_campfire");
 	}
 }

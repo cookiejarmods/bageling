@@ -83,7 +83,7 @@ repositories {
 
 dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
-    runtimeOnly "maven.modrinth:farmers-delight:1.21.1-${fd_version}"
+    runtimeOnly "maven.modrinth:farmers-delight:1.21.1-1.2.9"
     runtimeOnly "maven.modrinth:appleskin:3.0.5+mc1.21"
     runtimeOnly "mezz.jei:jei-$minecraft_version-neoforge:19.21.0.247"
 }
@@ -95,8 +95,6 @@ tasks.withType(ProcessResources).configureEach {
             neo_version            : neo_version,
             neo_version_range      : neo_version_range,
             loader_version_range   : loader_version_range,
-            fd_version             : fd_version,
-            fd_version_range       : fd_version_range,
             mod_id                 : mod_id,
             mod_name               : mod_name,
             mod_license            : mod_license,

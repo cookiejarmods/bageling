@@ -32,6 +32,10 @@ public class BagelingItems {
 
 	public static final DeferredItem<Item> SALMON_BAGEL = ITEMS.register("salmon_bagel", () -> new Item(new Item.Properties().food(BagelingFoodProperties.SALMON_BAGEL)));
 
+	public static final DeferredItem<Item> BAGEL_DOUGH = ITEMS.register("bagel_dough", () -> new Item(new Item.Properties().food(BagelingFoodProperties.BAGEL_DOUGH)));
+
+	public static final DeferredItem<Item> BACON_EGG_CHEESE_BAGEL = ITEMS.register("bacon_egg_cheese_bagel", () -> new Item(new Item.Properties().food(BagelingFoodProperties.BACON_EGG_CHEESE_BAGEL)));
+
 	public static class BagelingFoodProperties {
 		public static final FoodProperties BAGEL = new FoodProperties.Builder().nutrition(5).saturationModifier(0.4f).fast().build();
 
@@ -65,6 +69,8 @@ public class BagelingItems {
 			addAfter(event, BAGEL, SWEET_BERRY_JAM_BAGEL);
 			addAfter(event, BAGEL, GLOW_BERRY_JAM_BAGEL);
 			addAfter(event, BAGEL, SALMON_BAGEL);
+			addAfter(event, BAGEL, BAGEL_DOUGH);
+			addAfter(event, BAGEL, BACON_EGG_CHEESE_BAGEL);
 			event.accept(BagelingBlocks.BAGEL_STACK.asItem());
 		}
 	}

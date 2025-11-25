@@ -1,0 +1,20 @@
+package com.cookiejar.bageling.core.other.tags;
+
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
+import net.neoforged.neoforge.common.Tags;
+
+public class BagelingItemTags {
+	public static final TagKey<Item> DOUGH = itemTag("c", "foods/dough");
+	public static final TagKey<Item> COOKED_PORK = itemTag("c", "foods/cooked_pork");
+	public static final TagKey<Item> COOKED_EGG = itemTag("c", "foods/cooked_egg");
+	public static final TagKey<Item> MILK = itemTag("c", "foods/milk");
+	public static final TagKey<Item> COOKED_SALMON = itemTag("c", "foods/cooked_salmon");
+	public static final TagKey<Item> TOMATO = itemTag("c", "foods/tomato");
+	public static TagKey<Item> itemTag(String modid, String name) {
+		return TagKey.create(Registries.ITEM, ResourceLocation.fromNamespaceAndPath(modid, name));
+	}
+}

@@ -6,17 +6,17 @@
       "item": "bageling:bagel"
     },
     {
-      "item": "bageling:bagel"
-    },
-    {
-      "item": "bageling:bagel"
+      "tag": "c:foods/cooked_salmon"
     },
     {
       "tag": "c:foods/milk"
+    },
+    {
+      "tag": "c:foods/tomato"
     }
   ],
   "result": {
-    "count": 3,
-    "id": "bageling:cream_cheese_bagel"
+    "count": 1,
+    "id": "bageling:salmon_bagel"
   }
 }
