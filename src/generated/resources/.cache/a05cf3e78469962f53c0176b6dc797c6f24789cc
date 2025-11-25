@@ -1,9 +1,11 @@
-// 1.21.1	2025-04-03T03:46:30.005324427	Item Models: bageling
+// 1.21.1	2025-11-25T16:54:20.185711642	Item Models: bageling
 5782ec3099184e25eb421b5e9390f424527f2907 assets/bageling/models/item/apple_jam_bagel.json
 f4c644bd4bda228fac43b4d32da411d004a3a85e assets/bageling/models/item/bacon_egg_cheese_bagel.json
 c17540f34073552c9abb82e5b6a14df6b814e5c0 assets/bageling/models/item/bagel.json
 836e7098bde71f45cd1affc300a94d286ae12ecc assets/bageling/models/item/bagel_dough.json
 dea7ff41af0339780a545d9e64cb5f4fc070b3d4 assets/bageling/models/item/cream_cheese_bagel.json
 50a8b14564cfc134b768a22e99877800d90f4ca7 assets/bageling/models/item/glow_berry_jam_bagel.json
+d6d058803e2a5a98d4ef05dce3047ab5b89a3341 assets/bageling/models/item/salmon_bagel.json
 ddc3de7f7f9bf3aa9b2b0ad1013f7da3946c9150 assets/bageling/models/item/spidermans_bagel.json
+5bdbadbf3c3386e163ad90e2d721985c50933742 assets/bageling/models/item/strawberry_jam_bagel.json
 11060d17e817b03927e9329db14fc526a06cf85e assets/bageling/models/item/sweet_berry_jam_bagel.json

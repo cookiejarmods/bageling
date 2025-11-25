@@ -6,6 +6,7 @@ import com.cookiejar.bageling.core.other.tags.BagelingItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -22,10 +23,11 @@ public class BagelingItemTagsProvider extends ItemTagsProvider {
 
 	@Override
 	protected void addTags(HolderLookup.Provider provider) {
-		this.tag(Tags.Items.FOODS).add(BAGEL.get(), CREAM_CHEESE_BAGEL.get(), SPIDERMANS_BAGEL.get(), APPLE_JAM_BAGEL.get(), SWEET_BERRY_JAM_BAGEL.get(), GLOW_BERRY_JAM_BAGEL.get(), SALMON_BAGEL.get(), BAGEL_DOUGH.get(), BACON_EGG_CHEESE_BAGEL.get());
-		this.tag(BagelingItemTags.DOUGH).add(BAGEL_DOUGH.get());
-		this.tag(BagelingItemTags.BAGEL).add(BAGEL.get(), CREAM_CHEESE_BAGEL.get(), SPIDERMANS_BAGEL.get(), APPLE_JAM_BAGEL.get(), SWEET_BERRY_JAM_BAGEL.get(), GLOW_BERRY_JAM_BAGEL.get(), SALMON_BAGEL.get(), BAGEL_DOUGH.get(), BACON_EGG_CHEESE_BAGEL.get());
-
+		this.tag(Tags.Items.FOODS).add(BAGEL.get(), CREAM_CHEESE_BAGEL.get(), APPLE_JAM_BAGEL.get(), SWEET_BERRY_JAM_BAGEL.get(), GLOW_BERRY_JAM_BAGEL.get(), STRAWBERRY_JAM_BAGEL.get(), SALMON_BAGEL.get(), BAGEL_DOUGH.get(), BACON_EGG_CHEESE_BAGEL.get());
+		this.tag(BagelingItemTags.BAGEL).add(BAGEL.get(), CREAM_CHEESE_BAGEL.get(), APPLE_JAM_BAGEL.get(), SWEET_BERRY_JAM_BAGEL.get(), GLOW_BERRY_JAM_BAGEL.get(), STRAWBERRY_JAM_BAGEL.get(), SALMON_BAGEL.get(), BAGEL_DOUGH.get(), BACON_EGG_CHEESE_BAGEL.get());
+		this.tag(BagelingItemTags.MILK).add(Items.MILK_BUCKET);
+		this.tag(BagelingItemTags.COOKED_PORK).add(Items.COOKED_PORKCHOP);
+		this.tag(BagelingItemTags.COOKED_SALMON).add(Items.COOKED_SALMON);
 		this.copy(BagelingBlockTags.STORAGE_BLOCKS_BAGEL, BagelingItemTags.STORAGE_BLOCKS_BAGEL);
 	}
 }

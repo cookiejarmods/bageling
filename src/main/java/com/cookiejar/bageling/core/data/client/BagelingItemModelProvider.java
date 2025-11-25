@@ -20,7 +20,9 @@ public class BagelingItemModelProvider extends ItemModelProvider {
 		this.basicItem(SWEET_BERRY_JAM_BAGEL.get());
 		this.basicItem(GLOW_BERRY_JAM_BAGEL.get());
 		this.basicItem(BACON_EGG_CHEESE_BAGEL.get());
+		this.basicItem(SALMON_BAGEL.get());
 		this.basicItem(BAGEL_DOUGH.get());
+		this.basicItem(STRAWBERRY_JAM_BAGEL.get());
 
 		this.basicItem(SPIDERMANS_BAGEL.get());
 	}

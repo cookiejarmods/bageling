@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bageling:bagel"
+    },
+    {
+      "tag": "c:foods/cooked_pork"
+    },
+    {
+      "tag": "c:eggs"
+    },
+    {
+      "tag": "c:foods/milk"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "bageling:bacon_egg_cheese_bagel"
+  }
+}

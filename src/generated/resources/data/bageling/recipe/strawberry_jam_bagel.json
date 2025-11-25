@@ -2,7 +2,7 @@
   "neoforge:conditions": [
     {
       "type": "neoforge:mod_loaded",
-      "modid": "farmersdelight"
+      "modid": "neapolitan"
     }
   ],
   "type": "minecraft:crafting_shapeless",
@@ -12,17 +12,17 @@
       "item": "bageling:bagel"
     },
     {
-      "tag": "c:foods/cooked_salmon"
+      "item": "bageling:bagel"
     },
     {
-      "tag": "c:foods/milk"
+      "item": "bageling:bagel"
     },
     {
-      "tag": "c:foods/tomato"
+      "tag": "c:foods/strawberry"
     }
   ],
   "result": {
-    "count": 1,
-    "id": "bageling:salmon_bagel"
+    "count": 3,
+    "id": "bageling:strawberry_jam_bagel"
   }
 }

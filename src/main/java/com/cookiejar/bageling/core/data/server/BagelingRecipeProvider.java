@@ -6,7 +6,10 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.neoforged.neoforge.common.conditions.ModLoadedCondition;
+import net.neoforged.neoforge.common.conditions.OrCondition;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 import static com.cookiejar.bageling.core.registry.BagelingItems.*;
@@ -51,6 +54,12 @@ public class BagelingRecipeProvider extends RecipeProvider {
 				.unlockedBy("has_bagel", has(BAGEL))
 				.save(recipeOutput);
 
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, STRAWBERRY_JAM_BAGEL, 3)
+				.requires(BAGEL, 3)
+				.requires(BagelingItemTags.STRAWBERRY)
+				.unlockedBy("has_bagel", has(BAGEL))
+				.save(recipeOutput.withConditions(new ModLoadedCondition("neapolitan")));
+
 		ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, BagelingBlocks.BAGEL_STACK.asItem())
 				.requires(BAGEL, 9)
 				.unlockedBy("has_bagel", has(BAGEL))
@@ -64,7 +73,7 @@ public class BagelingRecipeProvider extends RecipeProvider {
 		ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, BAGEL_DOUGH)
 				.requires(BagelingItemTags.DOUGH)
 				.unlockedBy("has_dough", has(BagelingItemTags.DOUGH))
-				.save(recipeOutput);
+				.save(recipeOutput.withConditions(new OrCondition(List.of(new ModLoadedCondition("create"), new ModLoadedCondition("farmersdelight")))));
 
 		ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, BACON_EGG_CHEESE_BAGEL)
 				.requires(BAGEL)
@@ -74,12 +83,29 @@ public class BagelingRecipeProvider extends RecipeProvider {
 				.unlockedBy("has_bagel", has(BAGEL))
 				.save(recipeOutput);
 
+		ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, BACON_EGG_CHEESE_BAGEL)
+			.requires(BAGEL)
+			.requires(BagelingItemTags.COOKED_PORK)
+			.requires(BagelingItemTags.EGGS)
+			.requires(BagelingItemTags.MILK)
+			.unlockedBy("has_bagel", has(BAGEL))
+			.save(recipeOutput, "bacon_raw_egg_cheese_bagel");
+
 		ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, SALMON_BAGEL)
 				.requires(BAGEL)
 				.requires(BagelingItemTags.COOKED_SALMON)
 				.requires(BagelingItemTags.MILK)
 				.requires(BagelingItemTags.TOMATO)
 				.unlockedBy("has_bagel", has(BAGEL))
+				.save(recipeOutput.withConditions(new ModLoadedCondition("farmersdelight")));
+
+		ShapedRecipeBuilder.shaped(RecipeCategory.FOOD, SPIDERMANS_BAGEL, 8)
+				.pattern("BBB")
+				.pattern("BSB")
+				.pattern("BBB")
+				.define('B', BAGEL)
+				.define('S', STRING)
+				.unlockedBy("has_spidermans_bagel", has(SPIDERMANS_BAGEL))
 				.save(recipeOutput);
 
 		SimpleCookingRecipeBuilder.smelting(Ingredient.of(BAGEL_DOUGH), RecipeCategory.FOOD, BAGEL.get(), 0.35F, 200).unlockedBy("has_dough", has(BagelingItemTags.DOUGH)).save(recipeOutput, "bagel_from_smelting");

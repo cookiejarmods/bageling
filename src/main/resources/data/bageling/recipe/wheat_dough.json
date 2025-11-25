@@ -9,20 +9,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "bageling:bagel"
-    },
-    {
-      "tag": "c:foods/cooked_salmon"
-    },
-    {
-      "tag": "c:foods/milk"
-    },
-    {
-      "tag": "c:foods/tomato"
+      "item": "bageling:bagel_dough"
     }
   ],
   "result": {
     "count": 1,
-    "id": "bageling:salmon_bagel"
+    "id": "farmersdelight:wheat_dough"
   }
 }
