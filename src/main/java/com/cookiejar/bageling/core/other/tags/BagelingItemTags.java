@@ -1,12 +1,9 @@
 package com.cookiejar.bageling.core.other.tags;
 
-import com.cookiejar.bageling.core.registry.BagelingBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
-import net.neoforged.neoforge.common.Tags;
 
 public class BagelingItemTags {
 	public static final TagKey<Item> DOUGH = itemTag("c", "foods/dough");

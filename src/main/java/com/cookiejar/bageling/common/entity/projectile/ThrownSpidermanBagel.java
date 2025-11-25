@@ -2,9 +2,9 @@ package com.cookiejar.bageling.common.entity.projectile;
 
 import com.cookiejar.bageling.core.registry.BagelingEntityTypes;
 import com.cookiejar.bageling.core.registry.BagelingItems;
-import com.cookiejar.bageling.core.registry.BagelingSounds;
 import net.minecraft.core.particles.ItemParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
@@ -52,7 +52,8 @@ public class ThrownSpidermanBagel extends ThrowableItemProjectile {
 		entity.hurt(this.damageSources().thrown(this, this.getOwner()), (float) 0);
 		if (entity instanceof Player) {
 			((Player) entity).getFoodData().eat(5, 0.4F);
-			//this.playSound(); BONK
+			this.playSound(SoundEvents.ITEM_PICKUP, 1F, 0.6F);
+			this.playSound(SoundEvents.GENERIC_EAT, 0.5F, 1F);
 		}
 		super.onHitEntity(result);
 	}

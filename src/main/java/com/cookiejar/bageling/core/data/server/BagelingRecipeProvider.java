@@ -2,12 +2,10 @@ package com.cookiejar.bageling.core.data.server;
 
 import com.cookiejar.bageling.core.other.tags.BagelingItemTags;
 import com.cookiejar.bageling.core.registry.BagelingBlocks;
-import com.cookiejar.bageling.core.registry.BagelingItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.neoforged.neoforge.common.Tags;
 
 import java.util.concurrent.CompletableFuture;
 
