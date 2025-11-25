@@ -69,9 +69,15 @@ public class BagelingItems {
 			addAfter(event, GLOW_BERRY_JAM_BAGEL, BACON_EGG_CHEESE_BAGEL);
 			addAfter(event, Items.CAKE, BagelingBlocks.BAGEL_STACK.asItem());
 			event.accept(SPIDERMANS_BAGEL, CreativeModeTab.TabVisibility.SEARCH_TAB_ONLY);
-			if (ModList.get().isLoaded("farmersdelight")) { addAfter(event, BACON_EGG_CHEESE_BAGEL, SALMON_BAGEL); }
-			if (ModList.get().isLoaded("neapolitan")) { addAfter(event, GLOW_BERRY_JAM_BAGEL, STRAWBERRY_JAM_BAGEL);}
-			if (ModList.get().isLoaded("farmersdelight") || ModList.get().isLoaded("create")) { addBefore(event, Items.COOKIE, BAGEL_DOUGH); }
+			if (ModList.get().isLoaded("farmersdelight")) {
+				addAfter(event, BACON_EGG_CHEESE_BAGEL, SALMON_BAGEL);
+			}
+			if (ModList.get().isLoaded("neapolitan")) {
+				addAfter(event, GLOW_BERRY_JAM_BAGEL, STRAWBERRY_JAM_BAGEL);
+			}
+			if (ModList.get().isLoaded("farmersdelight") || ModList.get().isLoaded("create")) {
+				addBefore(event, Items.COOKIE, BAGEL_DOUGH);
+			}
 		}
 	}
 	public static void addAfter(BuildCreativeModeTabContentsEvent event, ItemLike existing, ItemLike newItem) {

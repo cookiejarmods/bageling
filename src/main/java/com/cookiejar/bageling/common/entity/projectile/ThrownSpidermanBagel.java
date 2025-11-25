@@ -1,9 +1,11 @@
 package com.cookiejar.bageling.common.entity.projectile;
 
+import com.cookiejar.bageling.core.registry.BagelingCriteriaTriggers;
 import com.cookiejar.bageling.core.registry.BagelingEntityTypes;
 import com.cookiejar.bageling.core.registry.BagelingItems;
 import net.minecraft.core.particles.ItemParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
@@ -48,12 +50,14 @@ public class ThrownSpidermanBagel extends ThrowableItemProjectile {
 	@Override
 	protected void onHitEntity(EntityHitResult result) {
 		Entity entity = result.getEntity();
-		Level level = result.getEntity().level();
 		entity.hurt(this.damageSources().thrown(this, this.getOwner()), (float) 0);
 		if (entity instanceof Player) {
 			((Player) entity).getFoodData().eat(5, 0.4F);
 			this.playSound(SoundEvents.ITEM_PICKUP, 1F, 0.6F);
 			this.playSound(SoundEvents.GENERIC_EAT, 0.5F, 1F);
+		}
+		if (this.getOwner() instanceof ServerPlayer) {
+			BagelingCriteriaTriggers.HIT_PLAYER_WITH_BAGEL.get().trigger((ServerPlayer) this.getOwner());
 		}
 		super.onHitEntity(result);
 	}

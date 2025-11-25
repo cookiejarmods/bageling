@@ -84,8 +84,8 @@ repositories {
 dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
     runtimeOnly "maven.modrinth:farmers-delight:1.21.1-1.2.9"
-    implementation "maven.modrinth:blueprint:8.0.8"
-    implementation "maven.modrinth:neapolitan:6.0.1"
+    compileOnly "maven.modrinth:blueprint:8.0.8"
+    compileOnly "maven.modrinth:neapolitan:6.0.1"
     runtimeOnly "maven.modrinth:appleskin:3.0.5+mc1.21"
     runtimeOnly "mezz.jei:jei-$minecraft_version-neoforge:19.21.0.247"
 }

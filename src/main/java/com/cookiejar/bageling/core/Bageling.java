@@ -2,10 +2,12 @@ package com.cookiejar.bageling.core;
 
 import com.cookiejar.bageling.core.data.client.BagelingBlockStateProvider;
 import com.cookiejar.bageling.core.data.client.BagelingItemModelProvider;
+import com.cookiejar.bageling.core.data.server.BagelingAdvancementProvider;
 import com.cookiejar.bageling.core.data.server.BagelingRecipeProvider;
 import com.cookiejar.bageling.core.data.server.tags.BagelingBlockTagsProvider;
 import com.cookiejar.bageling.core.data.server.tags.BagelingItemTagsProvider;
 import com.cookiejar.bageling.core.registry.BagelingBlocks;
+import com.cookiejar.bageling.core.registry.BagelingCriteriaTriggers;
 import com.cookiejar.bageling.core.registry.BagelingEntityTypes;
 import com.cookiejar.bageling.core.registry.BagelingItems;
 import net.minecraft.core.HolderLookup;
@@ -28,6 +30,7 @@ public class Bageling {
 		BagelingItems.ITEMS.register(bus);
 		BagelingBlocks.BLOCKS.register(bus);
 		BagelingEntityTypes.ENTITIES.register(bus);
+		BagelingCriteriaTriggers.TRIGGERS.register(bus);
 		bus.addListener(this::dataSetup);
 	}
 
@@ -46,6 +49,7 @@ public class Bageling {
 		generator.addProvider(server, blockTags);
 		generator.addProvider(server, new BagelingRecipeProvider(output, provider));
 		generator.addProvider(server, new BagelingItemTagsProvider(output, provider, blockTags.contentsGetter(), helper));
+		generator.addProvider(server, new BagelingAdvancementProvider(output, provider, helper));
 	}
 
 	public static ResourceLocation location(String path) {

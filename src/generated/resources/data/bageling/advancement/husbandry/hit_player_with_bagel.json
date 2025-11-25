@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:husbandry/root",
+  "criteria": {
+    "hit_player_with_bagel": {
+      "trigger": "bageling:hit__player_with_bagel"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.bageling.husbandry.hit_player_with_bagel.description"
+    },
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "bageling:spidermans_bagel"
+    },
+    "title": {
+      "translate": "advancements.bageling.husbandry.hit_player_with_bagel.title"
+    }
+  },
+  "requirements": [
+    [
+      "hit_player_with_bagel"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
