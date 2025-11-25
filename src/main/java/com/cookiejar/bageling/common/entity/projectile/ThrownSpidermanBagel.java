@@ -69,7 +69,7 @@ public class ThrownSpidermanBagel extends ThrowableItemProjectile {
 	@Override
 	protected void onHitBlock(BlockHitResult result) {
 		super.onHitBlock(result);
-		if (this.random.nextBoolean()) {
+		if (this.random.nextInt(10) > 3) {
 			this.level().addFreshEntity(new ItemEntity(this.level(), this.getX(), this.getY(), this.getZ(), this.getItem()));
 		}
 	}
