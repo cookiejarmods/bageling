@@ -1,6 +1,8 @@
 package com.cookiejar.bageling.core.data.server.tags;
 
 import com.cookiejar.bageling.core.Bageling;
+import com.cookiejar.bageling.core.other.tags.BagelingBlockTags;
+import com.cookiejar.bageling.core.registry.BagelingBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
@@ -16,6 +18,6 @@ public class BagelingBlockTagsProvider extends BlockTagsProvider {
 
 	@Override
 	protected void addTags(HolderLookup.Provider provider) {
-
+		this.tag(BagelingBlockTags.STORAGE_BLOCKS_BAGEL).add(BagelingBlocks.BAGEL_STACK.get());
 	}
 }
