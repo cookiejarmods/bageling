@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_bagel": {
+    "has_dough": {
       "conditions": {
         "items": [
           {
-            "items": "bageling:bagel"
+            "items": "#c:foods/dough"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:bagel_from_block"
+        "recipe": "bageling:bagel_from_smelting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_bagel"
+      "has_dough"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:bagel_from_block"
+      "bageling:bagel_from_smelting"
     ]
   }
 }

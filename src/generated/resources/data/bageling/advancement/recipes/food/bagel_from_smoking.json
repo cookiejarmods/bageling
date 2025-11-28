@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:bagel_from_smelting"
+        "recipe": "bageling:bagel_from_smoking"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:bagel_from_smelting"
+      "bageling:bagel_from_smoking"
     ]
   }
 }

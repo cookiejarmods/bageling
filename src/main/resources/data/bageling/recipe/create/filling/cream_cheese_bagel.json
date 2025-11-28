@@ -1,0 +1,24 @@
+{
+	"neoforge:conditions": [
+		{
+			"type": "neoforge:mod_loaded",
+			"modid": "create"
+		}
+	],
+	"type": "create:filling",
+	"ingredients": [
+		{
+			"item": "bageling:bagel"
+		},
+		{
+			"type": "neoforge:tag",
+			"amount": 250,
+			"tag": "c:milk"
+		}
+	],
+	"results": [
+		{
+			"id": "bageling:cream_cheese_bagel"
+		}
+	]
+}

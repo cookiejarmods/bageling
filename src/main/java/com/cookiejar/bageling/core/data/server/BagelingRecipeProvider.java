@@ -68,7 +68,7 @@ public class BagelingRecipeProvider extends RecipeProvider {
 		ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, BAGEL, 9)
 				.requires(BagelingBlocks.BAGEL_STACK.asItem())
 				.unlockedBy("has_bagel", has(BAGEL))
-				.save(recipeOutput, "bagel_from_block");
+				.save(recipeOutput, "bageling:bagel_from_block");
 
 		ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, BAGEL_DOUGH)
 				.requires(BagelingItemTags.DOUGH)
@@ -89,7 +89,7 @@ public class BagelingRecipeProvider extends RecipeProvider {
 			.requires(BagelingItemTags.EGGS)
 			.requires(BagelingItemTags.MILK)
 			.unlockedBy("has_bagel", has(BAGEL))
-			.save(recipeOutput, "bacon_raw_egg_cheese_bagel");
+			.save(recipeOutput, "bageling:bacon_raw_egg_cheese_bagel");
 
 		ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, SALMON_BAGEL)
 				.requires(BAGEL)
@@ -108,8 +108,8 @@ public class BagelingRecipeProvider extends RecipeProvider {
 				.unlockedBy("has_spidermans_bagel", has(SPIDERMANS_BAGEL))
 				.save(recipeOutput);
 
-		SimpleCookingRecipeBuilder.smelting(Ingredient.of(BAGEL_DOUGH), RecipeCategory.FOOD, BAGEL.get(), 0.35F, 200).unlockedBy("has_dough", has(BagelingItemTags.DOUGH)).save(recipeOutput, "bagel_from_smelting");
-		SimpleCookingRecipeBuilder.smoking(Ingredient.of(BAGEL_DOUGH), RecipeCategory.FOOD, BAGEL.get(), 0.35F, 100).unlockedBy("has_dough", has(BagelingItemTags.DOUGH)).save(recipeOutput, "bagel_from_smoking");
-		SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(BAGEL_DOUGH), RecipeCategory.FOOD, BAGEL.get(), 0.35F, 600).unlockedBy("has_dough", has(BagelingItemTags.DOUGH)).save(recipeOutput, "bagel_from_campfire");
+		SimpleCookingRecipeBuilder.smelting(Ingredient.of(BAGEL_DOUGH), RecipeCategory.FOOD, BAGEL.get(), 0.35F, 200).unlockedBy("has_dough", has(BagelingItemTags.DOUGH)).save(recipeOutput, "bageling:bagel_from_smelting");
+		SimpleCookingRecipeBuilder.smoking(Ingredient.of(BAGEL_DOUGH), RecipeCategory.FOOD, BAGEL.get(), 0.35F, 100).unlockedBy("has_dough", has(BagelingItemTags.DOUGH)).save(recipeOutput, "bageling:bagel_from_smoking");
+		SimpleCookingRecipeBuilder.campfireCooking(Ingredient.of(BAGEL_DOUGH), RecipeCategory.FOOD, BAGEL.get(), 0.35F, 600).unlockedBy("has_dough", has(BagelingItemTags.DOUGH)).save(recipeOutput, "bageling:bagel_from_campfire");
 	}
 }

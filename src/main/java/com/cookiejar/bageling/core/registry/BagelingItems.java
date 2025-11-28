@@ -66,7 +66,8 @@ public class BagelingItems {
 			addAfter(event, BAGEL, APPLE_JAM_BAGEL);
 			addAfter(event, APPLE_JAM_BAGEL, SWEET_BERRY_JAM_BAGEL);
 			addAfter(event, SWEET_BERRY_JAM_BAGEL, GLOW_BERRY_JAM_BAGEL);
-			addAfter(event, GLOW_BERRY_JAM_BAGEL, BACON_EGG_CHEESE_BAGEL);
+			addAfter(event, GLOW_BERRY_JAM_BAGEL, CREAM_CHEESE_BAGEL);
+			addAfter(event, CREAM_CHEESE_BAGEL, BACON_EGG_CHEESE_BAGEL);
 			addAfter(event, Items.CAKE, BagelingBlocks.BAGEL_STACK.asItem());
 			event.accept(SPIDERMANS_BAGEL, CreativeModeTab.TabVisibility.SEARCH_TAB_ONLY);
 			if (ModList.get().isLoaded("farmersdelight")) {
