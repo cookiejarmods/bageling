@@ -9,8 +9,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 
 @EventBusSubscriber(modid = Bageling.MOD_ID, value = Dist.CLIENT)
-public class ClientCompat {
-
+public class BagelingClientCompat {
 	@SubscribeEvent
 	public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(BagelingEntityTypes.SPIDERMANS_BAGEL.get(), ThrownItemRenderer::new);

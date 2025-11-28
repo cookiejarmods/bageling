@@ -6,6 +6,7 @@ import com.cookiejar.bageling.core.data.server.BagelingAdvancementProvider;
 import com.cookiejar.bageling.core.data.server.BagelingRecipeProvider;
 import com.cookiejar.bageling.core.data.server.tags.BagelingBlockTagsProvider;
 import com.cookiejar.bageling.core.data.server.tags.BagelingItemTagsProvider;
+import com.cookiejar.bageling.core.other.BagelingCompat;
 import com.cookiejar.bageling.core.registry.BagelingBlocks;
 import com.cookiejar.bageling.core.registry.BagelingCriteriaTriggers;
 import com.cookiejar.bageling.core.registry.BagelingEntityTypes;
@@ -17,6 +18,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
@@ -32,6 +34,7 @@ public class Bageling {
 		BagelingEntityTypes.ENTITIES.register(bus);
 		BagelingCriteriaTriggers.TRIGGERS.register(bus);
 		bus.addListener(this::dataSetup);
+		bus.addListener(this::commonSetup);
 	}
 
 	private void dataSetup(GatherDataEvent event) {
@@ -50,6 +53,10 @@ public class Bageling {
 		generator.addProvider(server, new BagelingRecipeProvider(output, provider));
 		generator.addProvider(server, new BagelingItemTagsProvider(output, provider, blockTags.contentsGetter(), helper));
 		generator.addProvider(server, new BagelingAdvancementProvider(output, provider, helper));
+	}
+
+	private void commonSetup(FMLCommonSetupEvent event) {
+		event.enqueueWork(BagelingCompat::register);
 	}
 
 	public static ResourceLocation location(String path) {
