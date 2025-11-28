@@ -55,9 +55,9 @@ public class ThrownSpidermanBagel extends ThrowableItemProjectile {
 			((Player) entity).getFoodData().eat(5, 0.4F);
 			this.playSound(SoundEvents.ITEM_PICKUP, 1F, 0.6F);
 			this.playSound(SoundEvents.GENERIC_EAT, 0.5F, 1F);
-		}
-		if (this.getOwner() instanceof ServerPlayer) {
-			BagelingCriteriaTriggers.HIT_PLAYER_WITH_BAGEL.get().trigger((ServerPlayer) this.getOwner());
+			if (this.getOwner() instanceof ServerPlayer) {
+				BagelingCriteriaTriggers.HIT_PLAYER_WITH_BAGEL.get().trigger((ServerPlayer) this.getOwner());
+			}
 		}
 		super.onHitEntity(result);
 	}
