@@ -1,12 +1,12 @@
 # Small mod which adds bagels to minecraft
-
+![Bagels](https://github.com/cookiejarmods/bageling/blob/1.21.1/bagels.png?raw=true)
 ## Feature List:
 - Bagels
 - Fruit Jam Bagels
 - Bagel Sandwiches
-- Bagel Dough (Requires extra mods)
+- Bagel Dough (Requires either FD or Create to be installed)
 
-Bagels in general are fast to eat
+All bagels are faster to eat than regular food
 
 ## Mod Integration:
 ### Farmer's Delight:
