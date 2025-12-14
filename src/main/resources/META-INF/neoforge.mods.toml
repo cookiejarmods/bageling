@@ -4,6 +4,7 @@ loaderVersion="${loader_version_range}"
 
 license="${mod_license}"
 
+issueTrackerURL="https://github.com/cookiejarmods/bageling/issues"
 
 [[mods]]
 
@@ -36,7 +37,31 @@ side="BOTH"
 [[dependencies.${mod_id}]]
 modId ="farmersdelight"
 type="optional"
+reason="Salmon Bagel and Bagel Dough"
 versionRange="[1.2.9,)"
 ordering="AFTER"
 side="BOTH"
 
+[[dependencies.${mod_id}]]
+modId ="neapolitan"
+type="optional"
+reason="Strawberry Jam Bagel"
+versionRange="[6.0.1,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId ="create"
+type="optional"
+reason="Bagel Dough"
+versionRange="[6.0.8,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId ="brewinandchewin"
+type="optional"
+reason="Cheese Recipes"
+versionRange="[4.4.1,)"
+ordering="AFTER"
+side="BOTH"
