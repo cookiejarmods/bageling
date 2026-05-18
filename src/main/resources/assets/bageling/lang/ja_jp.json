@@ -1,0 +1,22 @@
+{
+  "item.bageling.bagel": "ベーグル",
+  "item.bageling.spidermans_bagel": "スパイダーマンのベーグル",
+  "item.bageling.cream_cheese_bagel": "クリームチーズベーグル",
+  "item.bageling.apple_jam_bagel": "リンゴジャムベーグル",
+  "item.bageling.sweet_berry_jam_bagel": "スイートベリージャムベーグル",
+  "item.bageling.glow_berry_jam_bagel": "グロウベリージャムベーグル",
+  "item.bageling.strawberry_jam_bagel": "ストロベリージャムベーグル",
+
+  "item.bageling.bagel_dough": "ベーグル生地",
+  "item.bageling.salmon_bagel": "鮭のベーグル",
+  "item.bageling.bacon_egg_cheese_bagel": "ベーコンエッグチーズベーグル",
+
+  "block.bageling.bagel_stack": "ベーグルの山",
+
+  "entity.bageling.throwable_bagel": "スパイダーマンのベーグル",
+
+  "sounds.bageling.bonk": "ベーグルが当たる",
+  "sounds.bageling.throw": "ベーグルが投げられる",
+  "advancements.bageling.husbandry.hit_player_with_bagel.title": "ど真ん中",
+  "advancements.bageling.husbandry.hit_player_with_bagel.description": "プレイヤーにベーグルを当てる"
+}

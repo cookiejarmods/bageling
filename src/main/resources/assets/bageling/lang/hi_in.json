@@ -1,0 +1,22 @@
+{
+  "item.bageling.bagel": "बेगल",
+  "item.bageling.spidermans_bagel": "स्पाइडर-मैन का बेगल",
+  "item.bageling.cream_cheese_bagel": "क्रीम चीज़ बेगल",
+  "item.bageling.apple_jam_bagel": "सेब के मुरब्बे वाला बेगल",
+  "item.bageling.sweet_berry_jam_bagel": "मीठे फल के मुरब्बे वाला बेगल",
+  "item.bageling.glow_berry_jam_bagel": "ग्लो बेरी के मुरब्बे वाला बेगल",
+  "item.bageling.strawberry_jam_bagel": "स्ट्रॉबेरी के मुरब्बे वाला बेगल",
+
+  "item.bageling.bagel_dough": "बेगल का आटा",
+  "item.bageling.salmon_bagel": "सैल्मन बेगल",
+  "item.bageling.bacon_egg_cheese_bagel": "बेकन, अंडा और चीज़ बेगल",
+
+  "block.bageling.bagel_stack": "बेगल का ढेर",
+
+  "entity.bageling.throwable_bagel": "स्पाइडर-मैन का बेगल",
+
+  "sounds.bageling.bonk": "बेगल टकराया",
+  "sounds.bageling.throw": "बेगल उड़ गया",
+  "advancements.bageling.husbandry.hit_player_with_bagel.title": "सीधे निशाने पर",
+  "advancements.bageling.husbandry.hit_player_with_bagel.description": "एक खिलाड़ी को बेगल से मारो"
+}

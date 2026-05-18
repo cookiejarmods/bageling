@@ -1,0 +1,22 @@
+{
+  "item.bageling.bagel": "Бейґл",
+  "item.bageling.spidermans_bagel": "Бейґл Людини-павука",
+  "item.bageling.cream_cheese_bagel": "Бейґл з вершковим сиром",
+  "item.bageling.apple_jam_bagel": "Бейґл з яблучним джемом",
+  "item.bageling.sweet_berry_jam_bagel": "Бейґл з джемом із солодких ягід",
+  "item.bageling.glow_berry_jam_bagel": "Бейґл з джемом із сяйних ягід",
+  "item.bageling.strawberry_jam_bagel": "Бейґл з полуничним джемом",
+
+  "item.bageling.bagel_dough": "Тісто для бейґла",
+  "item.bageling.salmon_bagel": "Бейґл з лососем",
+  "item.bageling.bacon_egg_cheese_bagel": "Бейґл з беконом, яйцем і сиром",
+
+  "block.bageling.bagel_stack": "Стопка бейґлів",
+
+  "entity.bageling.throwable_bagel": "Бейґл Людини-павука",
+
+  "sounds.bageling.bonk": "Бейґл влучає",
+  "sounds.bageling.throw": "Бейґл летить",
+  "advancements.bageling.husbandry.hit_player_with_bagel.title": "У десятку!",
+  "advancements.bageling.husbandry.hit_player_with_bagel.description": "Влучте в гравця бейґлом"
+}

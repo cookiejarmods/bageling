@@ -1,0 +1,22 @@
+{
+  "item.bageling.bagel": "貝果",
+  "item.bageling.spidermans_bagel": "蜘蛛人的貝果",
+  "item.bageling.cream_cheese_bagel": "奶油起司貝果",
+  "item.bageling.apple_jam_bagel": "蘋果果醬貝果",
+  "item.bageling.sweet_berry_jam_bagel": "甜莓果醬貝果",
+  "item.bageling.glow_berry_jam_bagel": "螢光莓果醬貝果",
+  "item.bageling.strawberry_jam_bagel": "草莓果醬貝果",
+
+  "item.bageling.bagel_dough": "貝果麵團",
+  "item.bageling.salmon_bagel": "鮭魚貝果",
+  "item.bageling.bacon_egg_cheese_bagel": "培根蛋起司貝果",
+
+  "block.bageling.bagel_stack": "貝果堆",
+
+  "entity.bageling.throwable_bagel": "蜘蛛人的貝果",
+
+  "sounds.bageling.bonk": "貝果擊中",
+  "sounds.bageling.throw": "投擲貝果聲",
+  "advancements.bageling.husbandry.hit_player_with_bagel.title": "正中下懷",
+  "advancements.bageling.husbandry.hit_player_with_bagel.description": "用貝果擊中一名玩家"
+}

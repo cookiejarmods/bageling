@@ -1,0 +1,22 @@
+{
+  "item.bageling.bagel": "Bagel",
+  "item.bageling.spidermans_bagel": "Bagel do Homem-Aranha",
+  "item.bageling.cream_cheese_bagel": "Bagel de cream cheese",
+  "item.bageling.apple_jam_bagel": "Bagel de geleia de maçã",
+  "item.bageling.sweet_berry_jam_bagel": "Bagel de geleia de bagas doces",
+  "item.bageling.glow_berry_jam_bagel": "Bagel de geleia de bagas brilhantes",
+  "item.bageling.strawberry_jam_bagel": "Bagel de geleia de morango",
+
+  "item.bageling.bagel_dough": "Massa de bagel",
+  "item.bageling.salmon_bagel": "Bagel de salmão",
+  "item.bageling.bacon_egg_cheese_bagel": "Bagel de bacon, ovo e queijo",
+
+  "block.bageling.bagel_stack": "Pilha de bagels",
+
+  "entity.bageling.throwable_bagel": "Bagel do Homem-Aranha",
+
+  "sounds.bageling.bonk": "Bagel atinge",
+  "sounds.bageling.throw": "Bagel lançado",
+  "advancements.bageling.husbandry.hit_player_with_bagel.title": "Acertou em cheio",
+  "advancements.bageling.husbandry.hit_player_with_bagel.description": "Acerte um jogador com um bagel"
+}

@@ -1,0 +1,22 @@
+{
+  "item.bageling.bagel": "بيغل",
+  "item.bageling.spidermans_bagel": "بيغل الرجل العنكبوت",
+  "item.bageling.cream_cheese_bagel": "بيغل بالجبنة الكريمية",
+  "item.bageling.apple_jam_bagel": "بيغل بمربى التفاح",
+  "item.bageling.sweet_berry_jam_bagel": "بيغل بمربى التوت الحلو",
+  "item.bageling.glow_berry_jam_bagel": "بيغل بمربى التوت المُشع",
+  "item.bageling.strawberry_jam_bagel": "بيغل بمربى الفراولة",
+
+  "item.bageling.bagel_dough": "عجينة البيغل",
+  "item.bageling.salmon_bagel": "بيغل بالسلمون",
+  "item.bageling.bacon_egg_cheese_bagel": "بيغل باللحم المقدد والبيض والجبنة",
+
+  "block.bageling.bagel_stack": "كومة البيغل",
+
+  "entity.bageling.throwable_bagel": "بيغل الرجل العنكبوت",
+
+  "sounds.bageling.bonk": "بيغل يضرب",
+  "sounds.bageling.throw": "بيغل يطير",
+  "advancements.bageling.husbandry.hit_player_with_bagel.title": "ضربة في الصميم",
+  "advancements.bageling.husbandry.hit_player_with_bagel.description": "اضرب لاعبًا ببيغل"
+}

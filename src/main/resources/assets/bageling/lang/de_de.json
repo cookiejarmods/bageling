@@ -1,0 +1,22 @@
+{
+  "item.bageling.bagel": "Bagel",
+  "item.bageling.spidermans_bagel": "Spider-Mans Bagel",
+  "item.bageling.cream_cheese_bagel": "Frischkäse-Bagel",
+  "item.bageling.apple_jam_bagel": "Apfelmarmeladen-Bagel",
+  "item.bageling.sweet_berry_jam_bagel": "Süßbeerenmarmeladen-Bagel",
+  "item.bageling.glow_berry_jam_bagel": "Leuchtbeerenmarmeladen-Bagel",
+  "item.bageling.strawberry_jam_bagel": "Erdbeermarmeladen-Bagel",
+
+  "item.bageling.bagel_dough": "Bagelteig",
+  "item.bageling.salmon_bagel": "Lachs-Bagel",
+  "item.bageling.bacon_egg_cheese_bagel": "Speck-Ei-Käse-Bagel",
+
+  "block.bageling.bagel_stack": "Bagelstapel",
+
+  "entity.bageling.throwable_bagel": "Spider-Mans Bagel",
+
+  "sounds.bageling.bonk": "Bagel trifft",
+  "sounds.bageling.throw": "Bagel fliegt",
+  "advancements.bageling.husbandry.hit_player_with_bagel.title": "Das hat gesessen",
+  "advancements.bageling.husbandry.hit_player_with_bagel.description": "Triff einen Spieler mit einem Bagel"
+}

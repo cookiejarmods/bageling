@@ -1,0 +1,22 @@
+{
+  "item.bageling.bagel": "பேகல்",
+  "item.bageling.spidermans_bagel": "ஸ்பைடர்-மேனின் பேகல்",
+  "item.bageling.cream_cheese_bagel": "க்ரீம் சீஸ் பேகல்",
+  "item.bageling.apple_jam_bagel": "ஆப்பிள் ஜாம் பேகல்",
+  "item.bageling.sweet_berry_jam_bagel": "இனிப்பு பெர்ரி ஜாம் பேகல்",
+  "item.bageling.glow_berry_jam_bagel": "பளபளப்பான பெர்ரி ஜாம் பேகல்",
+  "item.bageling.strawberry_jam_bagel": "ஸ்ட்ராபெர்ரி ஜாம் பேகல்",
+
+  "item.bageling.bagel_dough": "பேகல் மாவு",
+  "item.bageling.salmon_bagel": "சால்மன் பேகல்",
+  "item.bageling.bacon_egg_cheese_bagel": "பேக்கன், முட்டை மற்றும் சீஸ் பேகல்",
+
+  "block.bageling.bagel_stack": "பேகல் அடுக்கு",
+
+  "entity.bageling.throwable_bagel": "ஸ்பைடர்-மேனின் பேகல்",
+
+  "sounds.bageling.bonk": "பேகல் தாக்குகிறது",
+  "sounds.bageling.throw": "பேகல் பறக்கிறது",
+  "advancements.bageling.husbandry.hit_player_with_bagel.title": "சரியான இடத்தில்",
+  "advancements.bageling.husbandry.hit_player_with_bagel.description": "ஒரு வீரரை பேகலால் தாக்குங்கள்"
+}

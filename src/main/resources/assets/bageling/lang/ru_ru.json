@@ -1,0 +1,22 @@
+{
+  "item.bageling.bagel": "Бейгл",
+  "item.bageling.spidermans_bagel": "Бейгл Человека-паука",
+  "item.bageling.cream_cheese_bagel": "Бейгл со сливочным сыром",
+  "item.bageling.apple_jam_bagel": "Бейгл с яблочным джемом",
+  "item.bageling.sweet_berry_jam_bagel": "Бейгл с джемом из сладких ягод",
+  "item.bageling.glow_berry_jam_bagel": "Бейгл с джемом из светящихся ягод",
+  "item.bageling.strawberry_jam_bagel": "Бейгл с клубничным джемом",
+
+  "item.bageling.bagel_dough": "Тесто для бейгла",
+  "item.bageling.salmon_bagel": "Бейгл с лососем",
+  "item.bageling.bacon_egg_cheese_bagel": "Бейгл с беконом, яйцом и сыром",
+
+  "block.bageling.bagel_stack": "Стопка бейглов",
+
+  "entity.bageling.throwable_bagel": "Бейгл Человека-паука",
+
+  "sounds.bageling.bonk": "Бейгл попадает",
+  "sounds.bageling.throw": "Бейгл летит",
+  "advancements.bageling.husbandry.hit_player_with_bagel.title": "В самую точку",
+  "advancements.bageling.husbandry.hit_player_with_bagel.description": "Попадите в игрока бейглом"
+}
